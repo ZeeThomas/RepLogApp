@@ -27,7 +27,68 @@
 .App-link {
   color: #61dafb;
 }
+/*Login Form Page CSS*/
+.loginForm-logo
+{
+  width: 231px;
+  height: 196px;
 
+}
+.loginFormPage
+{
+  background-color:#454545; ;
+}
+.title
+{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 64px;
+  font-weight:400;
+}
+.loginForm
+{
+  display:flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #91AFA2;
+  border-radius: 20px;
+  align-items: center;
+}
+form p
+{
+  text-align: left;
+  color: #FFF;
+}
+form input
+{
+  border-radius: 20px;
+  background-color: #FFF;
+  border: 0px #FFF;
+  width: 306px;
+
+}
+.submitButton
+{
+  width: 279px;
+  height: 64px;
+  color: #FFF;
+  background: #454545;
+  margin-top: 10px;
+}
+.googleAuthButton
+{
+  width: 279px;
+  height: 64px;
+  color: #FFF;
+  background: #454545;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.signUpLink
+{
+  color:#454545;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
