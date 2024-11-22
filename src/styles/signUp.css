@@ -1,0 +1,81 @@
+/*Login Form Page CSS*/
+*
+{
+    padding: 0;
+    margin: 0;
+}
+html, body
+{
+    height: 100%;
+}
+.signUpPage
+{
+    display:flex;
+    flex-direction: column;
+    background-color:#454545;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.signUpForm-logo
+{
+  width: 231px;
+  height: 196px;
+  flex-grow:0;
+
+}
+
+.title
+{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 64px;
+  font-weight:400;
+  flex-grow: 0;
+  margin-bottom:45px;
+}
+.signUpForm
+{
+
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #91AFA2;
+    border-radius: 20px;
+    align-items: center;
+    width: 90%;
+}
+form p
+{
+  text-align: left;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+}
+form input
+{
+  border-radius: 20px;
+  background-color: #FFF;
+  border: 0px #FFF;
+  width: 306px;
+  height: 34px;
+  
+
+}
+.submitButton
+{
+  width: 279px;
+  height: 64px;
+  color: #FFF;
+  background: #454545;
+  margin-top: 20px;
+  margin-bottom: 39px;
+}
+
+.signUpLink
+{
+  color:#454545;
+  
+}
