@@ -1,8 +1,8 @@
-#RepLog Readme
+# RepLog
 ## Table of Contents
 
 - [Overview](#overview)
-- [Figma Mockups](#MockUps)
+- [Figma Mockups](#mockups)
 - [Built With](#built-with)
 - [Features](#features)
 - [Running the App](#getting-started-with-create-react-app)
@@ -14,7 +14,7 @@
     3. List a few specific technical things that you learned or improved on.
     4. Share any other tips or guidance for others attempting this or something similar.
  -->
-##MockUps
+## MockUps
  
 ## Built With
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
