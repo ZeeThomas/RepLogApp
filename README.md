@@ -15,7 +15,16 @@
     4. Share any other tips or guidance for others attempting this or something similar.
  -->
 ## MockUps
+ ![Login (1)](https://github.com/user-attachments/assets/7831fe2b-8695-4695-8ecc-e8b52af082c1)
+ ![Home Dashboard](https://github.com/user-attachments/assets/438a11d5-49b1-4bf4-8f64-91c47f03508a)
+ ![Profile-Account](https://github.com/user-attachments/assets/eb069436-1cd5-4dbb-b9c0-c600f59ddf42)
+ ![Profile-Workout (1)](https://github.com/user-attachments/assets/a493c917-fdd0-4541-8864-5fb238a62d1c)
+ ![Workout Tracker (1)](https://github.com/user-attachments/assets/57a1c966-c9d2-4737-9f7e-b716f8d90fa5)
+
  
+
+
+
 ## Built With
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
 ## Features
