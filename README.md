@@ -2,6 +2,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Current Progress](#current-progress)
 - [Figma Mockups](#mockups)
 - [Built With](#built-with)
 - [Features](#features)
@@ -14,6 +15,9 @@
     3. List a few specific technical things that you learned or improved on.
     4. Share any other tips or guidance for others attempting this or something similar.
  -->
+
+
+ 
 ## MockUps
  ![Login (1)](https://github.com/user-attachments/assets/7831fe2b-8695-4695-8ecc-e8b52af082c1)
  ![Home Dashboard](https://github.com/user-attachments/assets/438a11d5-49b1-4bf4-8f64-91c47f03508a)
@@ -71,7 +75,12 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-
+## Current Progress
+ -Update: 12/16/2024-
+ I'm enjoying working on this app so much. At the moment, I'm working on the Add Workout Screen. I've completed the header component on that page and am now working on the other components to finish it off. I want to show off the working screens at the moment. Here are the Login Screen, the Profile-Account Screen, and the Profile-Workouts Screen. Some things look different than the mockups, but that's based on some design decisions I made during building. I hope you enjoy it!
+ ![localhost_3000_login](https://github.com/user-attachments/assets/6db6da7b-427f-4bd2-af00-e2d4b7a679aa)
+![localhost_3000_login (1)](https://github.com/user-attachments/assets/0c7e1dd6-8c3f-414d-a6e7-5b7c531e1aaa)
+![localhost_3000_login (2)](https://github.com/user-attachments/assets/7c6e5b8d-ed61-4270-80bf-dfa3866c7d69)
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
