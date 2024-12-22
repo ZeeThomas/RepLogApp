@@ -1,16 +1,22 @@
 import "../../styles/profile.css";
 import addIcon from "../../assets/add.png";
+import editIcon from "../../assets/edit.png";
 import optionsIcon from "../../assets/instant_mix.png";
 import {auth, db} from "../../config/firebase";
 import {getAuth} from "firebase/auth";
 import {doc, setDoc,getDoc} from "firebase/firestore";
-import {useState, useEffect} from "react"
+import {useState, useEffect, useContext} from "react"
+import {WorkoutContext} from "../../App";
 import {useNavigate} from "react-router-dom";
+
 export const ProfileWorkouts= () => 
 {
-    const [workouts, setWorkouts] = useState({});
+    
+    const {workouts, setWorkouts}= useContext(WorkoutContext);
+
     const uid = auth.currentUser.uid;
     const navigate = useNavigate();
+
     const fetchWorkout = async(day) => 
     {
         try{
@@ -40,6 +46,7 @@ export const ProfileWorkouts= () =>
         {
             workoutData[day] = await fetchWorkout(day);
         }
+        console.log(workoutData)
         setWorkouts(workoutData)
         };
         fetchAllWorkouts();
@@ -47,27 +54,33 @@ export const ProfileWorkouts= () =>
     const displayWorkout = (day) => 
     {
         const workout = workouts[day];
-        
-        if(!workout || workout.exercises.length === 0)
+        if (!workout) {
+            // Placeholder or default action while workout data is being fetched
+            return <p>Loading...</p>;
+        }
+        console.log("workout rest day is", workout)
+
+        if (workout.restday === true) 
+        {
+            return <p className="restDay">Rest Day<img className="editIcon" src={editIcon} alt="edit icon" /></p>
+        }
+        else if(!workout || workout.exercises.length === 0)
         {
           return <button onClick={() =>goToAddWorkout(day)}className={`addWorkout ${day.toLowerCase()}`} workoutButtons><img src={addIcon} alt="add icon" /> Add Workout</button>
         }
-       if (workout.restday == true) 
-       {
-           return <p className="restDay">Rest Day</p>
-       }
+        else 
+        {
+          return <button onClick={() =>goToAddWorkout(day)}className={"workout-name"} workoutButtons> {workout.name} Day!<img className="editIcon" src={editIcon} alt="edit icon" /></button>
+        }
+       
+       
+       /*need an if statement for if there is a workout there */
     };
     const goToAddWorkout = (day) =>
     {
-        console.log(day);
-        navigate("/addWorkout", 
-        {
-            state :
-            {
-            day: day,
-            id: uid,
-            }
-        });
+        const userData = {day: day, id: uid};
+
+        navigate('/addWorkout', { state: { userData } });
     }
     const setOptions = (day) =>
     {

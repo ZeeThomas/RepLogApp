@@ -1,0 +1,28 @@
+
+#add-btn
+{
+    all: unset;
+    cursor: pointer;
+    margin: 5px;
+}
+#save-btn
+{
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #91AFA2;
+    width: 326px;
+    height: 58px;
+    font-size: 24px;
+    margin: 20px;
+}
+.is-rest-day-container
+{
+    display: flex;
+}
+.is-rest-day-container p
+{
+    flex-grow: 1;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}

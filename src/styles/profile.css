@@ -59,3 +59,19 @@ form p
     font-size: 24px;
     font-family: Roboto;
 }
+.workout-name
+{
+    all: unset;
+    font-size: 20px;
+    color: #91afa2;
+    margin: 4px;
+}
+.editIcon
+{
+    width: 20px;
+    height: 20px;
+}
+.restDay
+{
+    font-size: 20px;
+}
