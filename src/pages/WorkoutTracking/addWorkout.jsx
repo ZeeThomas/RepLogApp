@@ -9,6 +9,8 @@ import {WorkoutHeader} from "./workoutHeader"
 import { ListExercises } from "./listExercises";
 import addIcon from "../../assets/add_circle.png";
 import {useNavigate} from "react-router-dom";
+import {NavigationBar} from "../navigationBar";
+
 
 
 
@@ -152,6 +154,9 @@ export const AddWorkout = () =>
             )}
              <div className="save-workout-button">
                             <button id = 'save-btn' onClick={saveInfo}>Save</button>
+            </div>
+            <div className="NavBar">
+               <NavigationBar />
             </div>
         </div>
     );

@@ -89,7 +89,7 @@ export const ProfileWorkouts= () =>
 
 
     return (
-        <div className="workout-container">
+        <div id="workout-container">
            {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].map((day) => (
         <div key={day} className= {`workout-day ${day.toLowerCase()}` }>
           <h3 className="daysOfWeek">

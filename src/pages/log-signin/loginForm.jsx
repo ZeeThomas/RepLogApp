@@ -26,7 +26,7 @@ export const LoginForm = () =>
             });
             await establishUser();
             console.log("success!");
-            navigate("/profile");
+            navigate("/");
         }
         catch(err)
         {

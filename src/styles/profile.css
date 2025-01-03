@@ -75,3 +75,9 @@ form p
 {
     font-size: 20px;
 }
+#workout-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

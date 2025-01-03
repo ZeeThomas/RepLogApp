@@ -1,0 +1,35 @@
+.bar-container
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+    /*background-color: #383838;*/
+    background-color: #454545;
+    border: 2px solid #91AFA2;
+    border-radius: 40px;
+    width: 99%;
+}
+a:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.element.active a p
+{
+    color: #91AFA2;
+}
+img
+{
+    width: 30px;
+    height: 30px;
+}
+.element
+{
+    justify-content: flex-end;
+}

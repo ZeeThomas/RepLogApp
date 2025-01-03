@@ -6,6 +6,7 @@ import rewardIcon from '../../assets/award_star.png';
 import {ProfileHeader} from "../profile/profileHeader"
 import {ProfileAccount} from "../profile/profile-account"
 import {ProfileWorkouts} from "../profile/profile-workouts"
+import {NavigationBar} from "../navigationBar"
 import { useContext, useState } from "react";
 import {UserContext} from "../../App";
 
@@ -31,9 +32,14 @@ export const Profile = () =>
    };
     return (
         <div className="profile-container background">
+          {console.log("Profile is sending user as", user)}
           <ProfileHeader user={user} onSectionChange={setSection}/>
           <div className="bottom-portion">
             {displaySection()}
+          </div>
+          <div className="bar">
+            <NavigationBar 
+            page="profile" />
           </div>
         </div>
          

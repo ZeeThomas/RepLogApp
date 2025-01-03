@@ -25,6 +25,8 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Monday Workout'
           });
           const mondayExerciseRef = doc(db, "users", cred.user.uid, "workouts", "Monday");
           await setDoc(mondayExerciseRef, {
@@ -32,6 +34,8 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Monday Workout',
           });
           const tuesdayExerciseRef = doc(db, "users", cred.user.uid, "workouts", "Tuesday");
           await setDoc(tuesdayExerciseRef, {
@@ -39,6 +43,8 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Tuesday Workout',
           });
           const wednesdayExerciseRef = doc(db, "users", cred.user.uid, "workouts", "Wednesday");
           await setDoc(wednesdayExerciseRef, {
@@ -46,6 +52,9 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Wednesday Workout',
+
           });
           const thursdayExerciseRef = doc(db, "users", cred.user.uid, "workouts", "Thursday");
           await setDoc(thursdayExerciseRef, {
@@ -53,6 +62,9 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Thursday Workout',
+
           });
           const fridayExerciseRef = doc(db, "users", cred.user.uid, "workouts", "Friday");
           await setDoc(fridayExerciseRef, {
@@ -60,6 +72,8 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Friday Workout',
           });
           const saturdayExerciseRef = doc(db, "users", cred.user.uid, "workouts", "Saturday");
           await setDoc(saturdayExerciseRef, {
@@ -67,6 +81,8 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Saturday Workout',
           });
           const sundayExerciseRef = doc(db, "users", cred.user.uid, "workouts", "Sunday");
           await setDoc(sundayExerciseRef, {
@@ -74,6 +90,9 @@ export const SignUp = () =>
             restday: true, 
             exercises: [],
             length: 0,
+            completed: false,
+            name: 'Sunday Workout',
+
           });
     }
     const onSignUp = async(data) =>

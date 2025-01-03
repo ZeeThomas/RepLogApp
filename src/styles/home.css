@@ -1,0 +1,44 @@
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header 
+{ 
+    display: flex;
+    flex-direction: column;
+}
+.todays-exercises-container
+{
+    padding-bottom: 35px;
+}
+.tmr-exercises-container
+{
+    padding-bottom: 50px;
+}
+#home-image
+{
+   height: 400px;
+   width: 400px;
+}
+#welcome-text
+{
+    margin-top: 13px;
+    margin-left: 53px; 
+    font-size: 12px;
+    text-align: left;
+}
+#home-user-text
+{
+    font-size: 32px;
+    text-align: center;
+}
+.progress-container
+{
+    background-color: #91AFA2;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 14px;
+    z-index: 1;
+}
