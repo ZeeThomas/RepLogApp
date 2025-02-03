@@ -33,7 +33,7 @@ export const ProfileWorkouts= () =>
         }
         catch (error)
         {
-            console.error("error fetching workout: " , error);
+            //console.error("error fetching workout: " , error);
         }
     
     };
@@ -46,7 +46,7 @@ export const ProfileWorkouts= () =>
         {
             workoutData[day] = await fetchWorkout(day);
         }
-        console.log(workoutData)
+        //console.log(workoutData)
         setWorkouts(workoutData)
         };
         fetchAllWorkouts();
@@ -58,7 +58,7 @@ export const ProfileWorkouts= () =>
             // Placeholder or default action while workout data is being fetched
             return <p>Loading...</p>;
         }
-        console.log("workout rest day is", workout)
+        //console.log("workout rest day is", workout)
 
         if (workout.restday === true) 
         {
@@ -84,7 +84,7 @@ export const ProfileWorkouts= () =>
     }
     const setOptions = (day) =>
     {
-       console.log("setOptions");
+       //console.log("setOptions");
     };
 
 

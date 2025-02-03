@@ -1,5 +1,6 @@
 import "../../styles/workoutHeader.css";
 /*Assets */
+import back from "../../assets/arrow_back.png";
 import addIcon from "../../assets/add.png";
 import calendar from "../../assets/calendar_today.png";
 import clock from "../../assets/alarm.png";
@@ -25,7 +26,7 @@ export const WorkoutHeader = ({workoutName,
         lengthOfExercise: time, 
         restDay: restDay,
     }
-    console.log("rest day is initialized as ", initialData.restDay)
+    //console.log("rest day is initialized as ", initialData.restDay)
     const [headerData, setHeaderData] = useState(initialData);
     const [rest, setRest] = useState(restDay);
     const nameRef = useRef();
@@ -45,7 +46,7 @@ export const WorkoutHeader = ({workoutName,
    const handleChange = (field, value) =>
    {
 
-        console.log("the field and value is ", field," ", value);
+        //console.log("the field and value is ", field," ", value);
         const updatedData = {...headerData, [field]: value};
         setHeaderData(updatedData);
         if (updateHeaderData)
@@ -65,12 +66,19 @@ export const WorkoutHeader = ({workoutName,
         const newRest = !rest;
         setRest(newRest);
         handleChange("restDay", newRest)
-        console.log("Rest is", newRest);
+        //console.log("Rest is", newRest);
         
+    }
+    const goToProfile = () =>
+    {
+        navigate("/profile")
     }
   return (
         <div className= "workoutHeaderContainer">
-            <input type="text" id="name" value={headerData.workoutName} className="workoutName" onChange ={(e) => handleChange("workoutName", e.target.value)} Blur={(e) => handleChange("workoutName", e.target.value)} />
+            <div className="workoutHeader-title">
+                <img onClick={()=>goToProfile()}src={back}/>
+                <input type="text" id="name" value={headerData.workoutName} className="workoutName" onChange ={(e) => handleChange("workoutName", e.target.value)} Blur={(e) => handleChange("workoutName", e.target.value)} />
+            </div>
             <div className="workoutHeader-info-row">
                 <div className="header-info">
                 <img src={calendar} alt="calendar icon" />

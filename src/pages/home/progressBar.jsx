@@ -41,9 +41,9 @@ export const ProgressBar = () =>
         }
         //setCompletedWorkouts(numOfCompletedWorkouts)
         setCompletedWorkouts(1)
-        console.log("got completed workouts: ", completedWorkouts)
+        //console.log("got completed workouts: ", completedWorkouts)
         setNumOfWorkouts(numWorkouts)
-        console.log("number of workouts: ", numOfWorkouts)
+        //console.log("number of workouts: ", numOfWorkouts)
     }
     const setData = () =>
     {

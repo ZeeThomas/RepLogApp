@@ -14,7 +14,7 @@ export const AddExercise = () =>
     const location = useLocation();
     const { workoutData } = location.state || "";
     const day = workoutData.day;
-    console.log("addExercise recieved", day)
+    //console.log("addExercise recieved", day)
     const uid = auth.currentUser?.uid;
 
 
@@ -40,15 +40,15 @@ export const AddExercise = () =>
     {
       
         try {
-            console.log("the day is ", day);
+            //console.log("the day is ", day);
             const workoutDocRef = doc(db, "users", uid, "workouts", day);
             await updateDoc(workoutDocRef, {
                 exercises: arrayUnion(newExercise),
             });
-            console.log("Exercise added successfully!")
+            //console.log("Exercise added successfully!")
         }
         catch (error){
-            console.log("Error adding exercise", error);
+            //console.log("Error adding exercise", error);
         }
 
        

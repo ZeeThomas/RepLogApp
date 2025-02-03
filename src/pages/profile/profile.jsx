@@ -32,7 +32,7 @@ export const Profile = () =>
    };
     return (
         <div className="profile-container background">
-          {console.log("Profile is sending user as", user)}
+          {/*console.log("Profile is sending user as", user)*/}
           <ProfileHeader user={user} onSectionChange={setSection}/>
           <div className="bottom-portion">
             {displaySection()}

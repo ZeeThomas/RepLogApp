@@ -38,19 +38,19 @@ export const StartExercise = () =>
             workoutName = headerData.name;
             setRest(headerData.restDay);
             length = headerData.lengthOfExercise
-            console.log("Workout Data saved successfully!")
+            //console.log("Workout Data saved successfully!")
             fetchAllExercises()
             navigate('/activeWorkout', { state: { workouts } });
         }
         catch (error){
-            console.log("Error saving workout", error);
+            //console.log("Error saving workout", error);
         }
 
     }
     const updateHeaderData = (updatedData) => 
     {
         setHeaderData(updatedData);
-        console.log("updating data to: ", updatedData);
+        //console.log("updating data to: ", updatedData);
     }
     const fetchAllExercises = async() => 
     {
@@ -69,17 +69,17 @@ export const StartExercise = () =>
                length = workoutData.length;
                restday = workoutData.restday;
                workoutName = workoutData.name;
-               console.log("this is the workout", workoutData.exercises.length);
+               //console.log("this is the workout", workoutData.exercises.length);
             }
             else
             {
-                console.log("no data was found for ", day)
+                //console.log("no data was found for ", day)
             }
             setWorkout(workoutData)
             updateHeaderData(workoutData)
         } catch (error)
         {
-            console.error("Error fetching workout", error)
+            //console.error("Error fetching workout", error)
         }
         finally 
         {
@@ -119,7 +119,7 @@ export const StartExercise = () =>
            </div>
             {rest === false?(
                 <>
-                    {console.log("rest day is ====", rest)}
+                    {/*console.log("rest day is ====", rest)*/}
                     <div className="exercises-list">
                         <ListExercises 
                         exercises= {workouts.exercises}

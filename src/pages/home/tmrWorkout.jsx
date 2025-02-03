@@ -8,7 +8,7 @@ export const TmrWorkout = (props) =>
         if(workoutTmr.exercises.length === 0)
         {
             //empty exercises 
-            console.log("not a restday")
+            //console.log("not a restday")
             return (
                 <div>
                     <h3>You're missing your exercises</h3>
@@ -18,7 +18,7 @@ export const TmrWorkout = (props) =>
         }
         else 
         {
-            console.log("The name of tmrs workout", workoutTmr.workoutName)
+            //console.log("The name of tmrs workout", workoutTmr.workoutName)
             return (
                 <div>
                     <h3 id="tmr-workout-name">{workoutTmr.workoutName} Day</h3>
@@ -39,7 +39,7 @@ export const TmrWorkout = (props) =>
     return(
         <div>
             <h1>Tomorrow...</h1>
-            {console.log("This is the workout for tmr", workoutTmr)}
+            {/*console.log("This is the workout for tmr", workoutTmr)*/}
             {restday == true? (displayRestDay()) : (displayWorkout())}
         </div>
     );

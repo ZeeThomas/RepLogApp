@@ -127,8 +127,8 @@ export const SignUp = () =>
             //figuring out error
           const errorCode = error.code;
           const errorMessage = error.message;
-          console.log("error code", errorCode);
-          console.log("error msg", errorMessage);
+          //console.log("error code", errorCode);
+          //console.log("error msg", errorMessage);
         });
     };
     return (

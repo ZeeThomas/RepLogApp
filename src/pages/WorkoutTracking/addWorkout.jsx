@@ -10,6 +10,9 @@ import { ListExercises } from "./listExercises";
 import addIcon from "../../assets/add_circle.png";
 import {useNavigate} from "react-router-dom";
 import {NavigationBar} from "../navigationBar";
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 
@@ -29,7 +32,7 @@ export const AddWorkout = () =>
     let exercises = [];
     let length = 0;
     let workoutName = "Default Workout";
-    console.log(userData)
+    //console.log(userData)
     
    /* 
     const {workouts, setWorkouts}= useContext(WorkoutContext);
@@ -43,7 +46,7 @@ export const AddWorkout = () =>
     {
         //saving the info from the header to DB
         try {
-            console.log(headerData);
+            //console.log(headerData);
             const workoutDocRef = doc(db, "users", uid, "workouts", day);
             await updateDoc(workoutDocRef, {
                 name:headerData.workoutName,
@@ -53,17 +56,18 @@ export const AddWorkout = () =>
             workoutName = headerData.name;
             setRest(headerData.restDay);
             length = headerData.lengthOfExercise
-            console.log("Workout Data saved successfully!")
+            toast.success('🦄 Saved Successfully!');
+            //console.log("Workout Data saved successfully!")
         }
         catch (error){
-            console.log("Error saving workout", error);
+            //console.log("Error saving workout", error);
         }
 
     }
     const updateHeaderData = (updatedData) => 
     {
         setHeaderData(updatedData);
-        console.log("updating data to: ", updatedData);
+        //console.log("updating data to: ", updatedData);
     }
     const fetchAllExercises = async() => 
     {
@@ -82,16 +86,16 @@ export const AddWorkout = () =>
                length = workoutData.length;
                restday = workoutData.restday;
                workoutName = workoutData.name;
-               console.log("this is the workout", workoutData.exercises.length);
+               //console.log("this is the workout", workoutData.exercises.length);
             }
             else
             {
-                console.log("no data was found for ", day)
+                //console.log("no data was found for ", day)
             }
             setWorkout(workoutData)
         } catch (error)
         {
-            console.error("Error fetching workout", error)
+            //console.error("Error fetching workout", error)
         }
         finally 
         {
@@ -123,6 +127,16 @@ export const AddWorkout = () =>
     return(
 
         <div className="workoutDiplayContainer">
+            <ToastContainer 
+            position="top-right"
+            autoClose={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss={false}
+            draggable={false}
+            theme="dark"
+            />
            <div className="workoutHeader">
             <WorkoutHeader 
             workoutName={workouts.name}
@@ -135,7 +149,7 @@ export const AddWorkout = () =>
            </div>
             {rest === false?(
                 <>
-                    {console.log("rest day is ====", rest)}
+                    {/*console.log("rest day is ====", rest)*/}
                     <div className="exercises-list">
                         <ListExercises 
                         exercises= {workouts.exercises}
@@ -155,9 +169,7 @@ export const AddWorkout = () =>
              <div className="save-workout-button">
                             <button id = 'save-btn' onClick={saveInfo}>Save</button>
             </div>
-            <div className="NavBar">
-               <NavigationBar />
-            </div>
+            
         </div>
     );
 };

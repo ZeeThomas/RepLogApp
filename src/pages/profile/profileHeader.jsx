@@ -11,7 +11,7 @@ export const ProfileHeader = ({user, onSectionChange}) =>
     return (
         <div className="top-portion background">
             <img src={profileImage} alt="profile"/>
-            {console.log("the user is", user.name)}
+            {/*console.log("the user is", user.name)*/}
             <h2>{user.name}</h2>
             <h2>{user.age}</h2>
             <div className="navigation">

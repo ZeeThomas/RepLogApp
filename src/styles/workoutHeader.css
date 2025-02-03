@@ -21,6 +21,13 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
+.workoutHeader-title
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+}
 .header-info
 {
     display: flex;
@@ -35,7 +42,7 @@ body{
 .workoutName 
 {
   all: unset;
-  font-size: 36px;
+  font-size: 25px;
   background-color: #373737;
 
 }

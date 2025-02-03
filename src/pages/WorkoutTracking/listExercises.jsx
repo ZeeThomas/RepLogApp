@@ -21,7 +21,7 @@ export const ListExercises = (props) =>
             
             if (workoutDoc.exists())
             {
-                console.log("it exist",workoutDoc.data().exercises)
+                //console.log("it exist",workoutDoc.data().exercises)
                 setExerciseList(workoutDoc.data().exercises || []);
             } else 
             {
@@ -31,7 +31,7 @@ export const ListExercises = (props) =>
 
         }catch(error)
         {
-            console.log("error grabbing exercises", error)
+            //console.log("error grabbing exercises", error)
         }finally
         {
             setLoading(false);
@@ -47,11 +47,11 @@ export const ListExercises = (props) =>
                 {
                     exercises: arrayRemove(exerciseObject)
                 });
-            console.log(`${exerciseObject.name} has been removed from the exercises`);
+            //console.log(`${exerciseObject.name} has been removed from the exercises`);
             fetchExercises();
         }catch (error)
         {
-            console.log("Error removeing exercise ", exerciseObject.name, " error is: ", error);
+            //console.log("Error removeing exercise ", exerciseObject.name, " error is: ", error);
         }
    }
    useEffect (() => 

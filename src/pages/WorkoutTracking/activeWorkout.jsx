@@ -104,7 +104,7 @@ export const ActiveWorkout = () =>
     }
     const finishWorkout = () =>
     {
-        console.log("new list is, ", updatedExerciseList)
+        //console.log("new list is, ", updatedExerciseList)
         saveInfo()
         navigate("/");
     }

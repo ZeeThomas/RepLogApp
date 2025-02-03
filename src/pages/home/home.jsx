@@ -60,7 +60,7 @@ export const Home = () =>
             }
         } catch (error)
         {
-            console.error("Error fetching workout", error)
+            //console.error("Error fetching workout", error)
         }
         finally 
         {
@@ -89,10 +89,10 @@ export const Home = () =>
                 }
                 catch (error)
                 {
-                    console.error("Eerror updating completed field: ")
+                    //console.error("Eerror updating completed field: ")
                 }
             }
-            console.log("week updated")
+            //console.log("week updated")
         }
     }
     //this function gets every workout and finds if it's completed. 

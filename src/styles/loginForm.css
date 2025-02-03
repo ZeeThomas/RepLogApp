@@ -74,6 +74,10 @@ form input
 }
 .googleAuthButton
 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 279px;
   height: 64px;
   color: #FFF;
