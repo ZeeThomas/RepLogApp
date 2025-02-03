@@ -31,7 +31,7 @@ export const NavigationBar = (props) =>
                 </Link>
             </div>
             <div className={`element workout ${isActive("workout")? "active": ""}`}>
-                <Link to="/extra">
+                <Link to="/startWorkout">
                     <img src={dumbbellIcon}/>
                     <p>Workout</p>
                 </Link>

@@ -81,3 +81,7 @@ form p
     flex-direction: column;
     gap: 20px;
 }
+.edit-button
+{
+    all: unset;
+}

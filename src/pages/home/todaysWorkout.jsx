@@ -1,7 +1,10 @@
 import "../../styles/todaysWorkout.css";
+import {useNavigate} from "react-router-dom";
+
 export const TodaysWorkout = (props) => 
 {
     const {workoutToday} = props;
+    const navigate = useNavigate();
     const exerciseList = workoutToday.exercises || [];
     const numOfExercises = workoutToday.exercises.length;
     const getFive = () => 
@@ -50,7 +53,7 @@ export const TodaysWorkout = (props) =>
                     </div>
                     <div className="show-more">
                         {/*This is going to turn to a button to send to workoutpage */}
-                        <p>See Full Workout</p>
+                        <btn className="see-workout-btn" onClick={()=>navigate("/startWorkout")}>See Full Workout</btn>
                     </div>
                 </div>
               

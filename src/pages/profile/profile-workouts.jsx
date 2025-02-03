@@ -62,7 +62,7 @@ export const ProfileWorkouts= () =>
 
         if (workout.restday === true) 
         {
-            return <p className="restDay">Rest Day<img className="editIcon" src={editIcon} alt="edit icon" /></p>
+            return <p className="restDay">Rest Day<button className="edit-button" onClick={() =>goToAddWorkout(day)}><img className="editIcon" src={editIcon} alt="edit icon" /></button></p>
         }
         else if(!workout || workout.exercises.length === 0)
         {

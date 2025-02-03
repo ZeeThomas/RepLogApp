@@ -6,6 +6,9 @@ import {SignUp} from "./pages/log-signin/signUp"
 import {Profile} from "./pages/profile/profile"
 import {AddWorkout} from "./pages/WorkoutTracking/addWorkout"
 import { AddExercise } from './pages/WorkoutTracking/addExercise';
+import {StartExercise} from './pages/WorkoutTracking/startExercise';
+import {ActiveWorkout} from './pages/WorkoutTracking/activeWorkout';
+
 import { useState, createContext } from 'react';
 
 export const UserContext = createContext();
@@ -28,10 +31,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />}/>
           <Route path="/signUp" element={<SignUp />}/>
-          
+          <Route path="/startWorkout" element={<StartExercise />} />
           <Route path="/profile" element={<Profile />}/>
           <Route path="/addWorkout" element={<AddWorkout />}/>
           <Route path="/addExercise" element={<AddExercise />}/>
+          <Route path="/activeWorkout" element={<ActiveWorkout />} />
 
         </Routes>
         </WorkoutContext.Provider>
