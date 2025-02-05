@@ -28,7 +28,8 @@ function App() {
         <UserContext.Provider value={{user: user, setUser:setUser}}>
         <WorkoutContext.Provider value={{workouts: workouts, setWorkouts:setWorkouts}}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />}/>
           <Route path="/signUp" element={<SignUp />}/>
           <Route path="/startWorkout" element={<StartExercise />} />

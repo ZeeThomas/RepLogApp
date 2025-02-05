@@ -25,7 +25,7 @@ export const NavigationBar = (props) =>
     return (
         <div className="bar-container">
             <div className={`element home ${isActive("home")? "active": ""}`}>
-                <Link to="/" >
+                <Link to="/home" >
                     <img src={homeIcon}/>
                     <p>Home</p>
                 </Link>

@@ -27,7 +27,7 @@ export const LoginForm = () =>
             });
             await establishUser();
             //console.log("success!");
-            navigate("/");
+            navigate("/home");
         }
         catch(err)
         {
@@ -133,7 +133,7 @@ export const LoginForm = () =>
             if(docSnap.exists())
             {
                 setUser({name:docSnap.data().Name, numWorkouts:docSnap.data().NumWorkouts, age:docSnap.data().Age, sex:docSnap.data().Sex,})
-                navigate("/")
+                navigate("/home")
             }
             else
             {

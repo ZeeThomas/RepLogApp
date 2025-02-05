@@ -100,13 +100,13 @@ export const ActiveWorkout = () =>
     }
     const endSession = () =>
     {
-        navigate("/")
+        navigate("/home")
     }
     const finishWorkout = () =>
     {
         //console.log("new list is, ", updatedExerciseList)
         saveInfo()
-        navigate("/");
+        navigate("/home");
     }
     return (
         <div className="active-workout-container">

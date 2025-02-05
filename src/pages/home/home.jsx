@@ -158,7 +158,7 @@ export const Home = () =>
                 <aside ref={sidebarRef} className={`sidebar ${sidebarToggle? "visible": ""}`}>
                     <div className="bar">
                         <div className={`element home active`}>
-                            <Link to="/" >
+                            <Link to="/home" >
                                 <img src={homeIcon}/>
                                 <p>Home</p>
                             </Link>
