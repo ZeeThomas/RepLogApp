@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename="https://zeethomas.github.io/RepLogApp/">
         <UserContext.Provider value={{user: user, setUser:setUser}}>
         <WorkoutContext.Provider value={{workouts: workouts, setWorkouts:setWorkouts}}>
         <Routes>
