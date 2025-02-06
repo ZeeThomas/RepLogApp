@@ -1,5 +1,5 @@
 import './styles/App.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import {Home} from "./pages/home/home"
 import {Login} from "./pages/log-signin/login"
 import {SignUp} from "./pages/log-signin/signUp"
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router basename="https://zeethomas.github.io/RepLogApp/">
+      <Router >
         <UserContext.Provider value={{user: user, setUser:setUser}}>
         <WorkoutContext.Provider value={{workouts: workouts, setWorkouts:setWorkouts}}>
         <Routes>
