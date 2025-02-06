@@ -8,6 +8,9 @@ import {AddWorkout} from "./pages/WorkoutTracking/addWorkout"
 import { AddExercise } from './pages/WorkoutTracking/addExercise';
 import {StartExercise} from './pages/WorkoutTracking/startExercise';
 import {ActiveWorkout} from './pages/WorkoutTracking/activeWorkout';
+import { Navigate } from "react-router-dom";
+
+
 
 import { useState, createContext } from 'react';
 
