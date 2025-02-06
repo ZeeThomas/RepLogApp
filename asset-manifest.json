@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/replogapp/static/css/main.1c81ad4b.css",
+    "main.js": "/replogapp/static/js/main.38de6607.js",
+    "static/media/unsplash-workout-picture.jpg": "/replogapp/static/media/unsplash-workout-picture.8e1d09436cb03852ebdd.jpg",
+    "static/media/google_logo.png": "/replogapp/static/media/google_logo.81fdb134397492b14f45.png",
+    "static/media/account_circle.svg": "/replogapp/static/media/account_circle.03ce9f6c6bed287204846bd221ccbd46.svg",
+    "index.html": "/replogapp/index.html",
+    "main.1c81ad4b.css.map": "/replogapp/static/css/main.1c81ad4b.css.map",
+    "main.38de6607.js.map": "/replogapp/static/js/main.38de6607.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c81ad4b.css",
+    "static/js/main.38de6607.js"
+  ]
+}
