@@ -1,4 +1,6 @@
 # RepLog
+This app was created for use on mobile
+[Live RepLog website](https://zeethomas.github.io/RepLogApp/)
 ## Table of Contents
 
 - [Overview](#overview)
