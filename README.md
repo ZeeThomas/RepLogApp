@@ -15,6 +15,7 @@
     3. List a few specific technical things that you learned or improved on.
     4. Share any other tips or guidance for others attempting this or something similar.
  -->
+ Welcome to RepLog! This app came to me after I started my workout journey. I was struggling with keeping track of my weights and exercises and needed something other than my basic notes app. So RepLog was born. Learning React is a journey as well but I learned more while building this app then I learned in the 13 hour course I watched. Although I'm truly thankful for the react teachers of youtube, this project has really increased my confidence level. My project is live but it's not truly done. There are things I want to add and change as time goes on. So please take a look and save this project to see the changes I come. Thank you so much for reading and using RepLog. I hope you enjoy.
 
 
  
@@ -31,9 +32,10 @@
 
 ## Built With
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
+ React for the front end and  Firebase for the backend.  
 ## Features
 <!-- TODO: List what specific 'user problems' that this application solves. -->
-
+This project allows user to track their workout and the weights they use while doing them. 
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -76,6 +78,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Current Progress
+-Update: 2/9/2025-
+This project is live. So thankful for everyone who supported me and believed in the project.
  -Update: 12/16/2024-
  I'm enjoying working on this app so much. At the moment, I'm working on the Add Workout Screen. I've completed the header component on that page and am now working on the other components to finish it off. I want to show off the working screens at the moment. Here are the Login Screen, the Profile-Account Screen, and the Profile-Workouts Screen. Some things look different than the mockups, but that's based on some design decisions I made during building. I hope you enjoy it!
  ![localhost_3000_login](https://github.com/user-attachments/assets/6db6da7b-427f-4bd2-af00-e2d4b7a679aa)
