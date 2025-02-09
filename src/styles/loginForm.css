@@ -62,6 +62,7 @@ form p
 
 form input
 {
+  padding-left: 15px;
   border-radius: 20px;
   background-color: #FFF;
   border: 0px #FFF;

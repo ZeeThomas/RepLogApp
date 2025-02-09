@@ -200,7 +200,7 @@ export const LoginForm = () =>
             <p>Email</p>
             <input placeholder="Email" {...register("email", {required:true})} />
             <p>Password</p>
-            <input placeholder="Password" {...register("password", {required:true})} />
+            <input type="password" placeholder="Password" {...register("password", {required:true})} />
             {
               //<button className="googleAuthButton" onClick={signInWithGoogle}><img src={google_logo}/>Login with Google</button>
             }
