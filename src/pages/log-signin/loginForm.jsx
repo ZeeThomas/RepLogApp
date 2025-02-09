@@ -181,6 +181,10 @@ export const LoginForm = () =>
         }
 
     };
+    const goToSignUp =() =>
+    {
+        navigate("/signUp");
+    }
     useEffect(() =>
     {
         if (user)
@@ -201,7 +205,10 @@ export const LoginForm = () =>
               //<button className="googleAuthButton" onClick={signInWithGoogle}><img src={google_logo}/>Login with Google</button>
             }
             <input className="submitButton" type="submit" value="Login" />
-            <p className="signUpText">Don't have an account yet? <a className="signUpLink"href="/signUp">Sign Up</a></p>
+            <div className="signupInfo">
+              <p className="signUpText">Don't have an account yet?</p> 
+              <p className="signUpLink" onClick={()=>goToSignUp()}>Sign Up</p>
+            </div>
         </form>
         
     </div>

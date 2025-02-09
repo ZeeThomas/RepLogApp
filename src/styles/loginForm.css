@@ -54,6 +54,12 @@ form p
   font-size: 24px;
   font-weight: 400;
 }
+.signupInfo
+{
+  display: flex;
+  flex-direction: row;
+}
+
 form input
 {
   border-radius: 20px;
